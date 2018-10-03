@@ -1,0 +1,87 @@
+doctype html
+html
+	head
+		title #{title} - FullStack Vietnam
+		
+		script.
+			var ambient_value='#0f0c29';var diffuse_value='#302b63';
+		// Bootstrap
+		link(href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+		// Font Awesome
+		link(href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet")
+		// NProgress
+		link(href="vendors/nprogress/nprogress.css" rel="stylesheet")
+		// iCheck
+		link(href="vendors/iCheck/skins/flat/green.css" rel="stylesheet")
+		// bootstrap-progressbar
+		link(href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet")
+		// JQVMap
+		link(href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet")
+		// bootstrap-daterangepicker
+		link(href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet")
+		// Custom Theme Style
+		link(href="build/css/custom.min.css" rel="stylesheet")
+		link(href="build/css/style.css" rel="stylesheet")
+		
+	body.nav-md
+		.container.body
+			.main_container
+				include header
+				.right_col(role="main")
+					block content
+				include footer
+		//- main 
+		//- 	.container.mt-3
+		//- 		.row
+		//- 			.col-sm-3
+		//- 				.list-group
+		//- 					a.list-group-item.list-group-item-action(href="/") Index
+		//- 					a.list-group-item.list-group-item-action(href="/news") News
+		//- 					a.list-group-item.list-group-item-action(href="/users") Users
+		//- 					a.list-group-item.list-group-item-action(href="/form") Form
+		//- 					a.list-group-item.list-group-item-action(href="/formnews") Form News
+		//- 			.col
+		//- 				block content
+		// jQuery
+		script(src="vendors/jquery/dist/jquery.min.js")
+		// Bootstrap
+		script(src="vendors/bootstrap/dist/js/bootstrap.min.js")
+		// FastClick
+		script(src="vendors/fastclick/lib/fastclick.js")
+		// NProgress
+		script(src="vendors/nprogress/nprogress.js")
+		// Chart.js
+		script(src="vendors/Chart.js/dist/Chart.min.js")
+		// gauge.js
+		script(src="vendors/gauge.js/dist/gauge.min.js")
+		// bootstrap-progressbar
+		script(src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js")
+		// iCheck
+		script(src="vendors/iCheck/icheck.min.js")
+		// Skycons
+		script(src="vendors/skycons/skycons.js")
+		// Flot
+		script(src="vendors/Flot/jquery.flot.js")
+		script(src="vendors/Flot/jquery.flot.pie.js")
+		script(src="vendors/Flot/jquery.flot.time.js")
+		script(src="vendors/Flot/jquery.flot.stack.js")
+		script(src="vendors/Flot/jquery.flot.resize.js")
+		// Flot plugins
+		script(src="vendors/flot.orderbars/js/jquery.flot.orderBars.js")
+		script(src="vendors/flot-spline/js/jquery.flot.spline.min.js")
+		script(src="vendors/flot.curvedlines/curvedLines.js")
+		// DateJS
+		script(src="vendors/DateJS/build/date.js")
+		// JQVMap
+		script(src="vendors/jqvmap/dist/jquery.vmap.js")
+		script(src="vendors/jqvmap/dist/maps/jquery.vmap.world.js")
+		script(src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js")
+		// bootstrap-daterangepicker
+		script(src="vendors/moment/min/moment.min.js")
+		script(src="vendors/bootstrap-daterangepicker/daterangepicker.js")
+		// Custom Theme Scripts
+		script(src="build/js/custom.min.js")
+		script(src="js/main.js")
+		
+				
+	

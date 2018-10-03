@@ -1,0 +1,41 @@
+.main_container {
+    position: relative;
+}
+
+body {
+    background-color: transparent;
+}
+
+.filehidden {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.btn-file {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-group {
+    position: relative;
+}
+
+.x_title h2 {
+    float: none;
+}
+
+.desc-img {
+    width: 100px;
+}
+
+.even.pointer h3 {
+    margin: 0;
+}
+
+.even.pointer time {
+    margin-top: 10px;
+    display: block;
+}

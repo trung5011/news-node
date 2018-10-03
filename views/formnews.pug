@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	h1= title
+	form.form-post(method="POST", action="/savenews", enctype="multipart/form-data")
+		.form-group
+			label Title Post
+			input.form-control(name="Title" placeholder="Title")
+		.form-group
+			label Mô Tả
+			textarea#ckeditor.form-control(name="Desc")
+		.form-group
+			label Mô Tả	Ngắn
+			textarea.form-control(name="SDesc")
+		.form-group
+			p.btn-file Thêm ảnh đại Diện
+			input.filehidden(name="imgUploader" type="file")
+		.form-group
+			button.btn.btn-primary(type="submit") Thêm mới
+	script(src="./ckeditor/ckeditor.js")
+	script.
+		CKEDITOR.replace("ckeditor",{
+			"extraPlugins" : "imagebrowser",
+			"imageBrowser_listUrl":"/editor-img"
+		})
+	

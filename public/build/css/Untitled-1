@@ -1,0 +1,127 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package damsen
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"><!-- ////////////// Mobile title color ////////////// -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <title>Căn hộ Milky Way</title>
+ 
+    <meta name="description" content="Chủ đầu tư Tanimex">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback">
+    <!-- Meta verification-->
+    <meta name="google-site-verification" content="VhfbPndGW-UftEvWql2Nwt7F1F5KBgd3lMcGgjn4Ovc">
+    <meta name="msvalidate.01" content="F7679394C660249FBA58732D6100A65A">
+    <meta name="yandex-verification" content="bc82adfacdd74cbf">
+    <link rel="alternate" type="application/rss+xml" title="DEMO SITE" href="//demo-site.com/feed.xml">
+    <!-- Meta Tag-->
+    <meta name="generator" content="Milky Way">
+    <meta name="robots" content="noodp">
+    <meta name="keywords" content="milky way, chung cư milky way, căn hộ milky way, chung cu milky way, can ho milky way, dự án milky way, du an milky way, chung cu bình tân, chung cu binh tan">
+    <link rel="dns-prefetch" href="http://maps.googleapis.com/">
+    <link rel="dns-prefetch" href="http://s.w.org/">
+    <meta name="apple-itunes-app" content="app-idXXX-XXX-XXX-XXXX">
+    <!-- SEO MAP-->
+    <meta name="DC.title" content="Home">
+    <meta name="geo.region" content="EN">
+    <meta name="geo.placename" content="DEMO SITE">
+    <meta name="geo.position" content="36.204824;138.252924">
+    <meta name="ICBM" content="36.204824,138.252924">
+    <!-- SEO-->
+    <meta name="author" content="DEMO SITE">
+    <link rel="canonical" href="//demo-site.comundefined">
+    <!-- Social: Twitter-->
+    <meta name="twitter:card" content="Home - DEMO SITE">
+    <meta name="twitter:site" content="demo-site.com">
+    <meta name="twitter:creator" content="@Bao Nguyen">
+    <meta name="twitter:title" content="Home - DEMO SITE">
+    <meta name="twitter:description" content="Description for home page">
+    <meta name="twitter:image:src" content="//demo-site.com/images/logo.png">
+    <!-- Social: Facebook / Open Graph-->
+    <meta property="fb:admins" content="XXXXXXX,XXXXXXX">
+    <meta property="fb:app_id" content="100000511421818">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="//demo-site.comundefined">
+    <meta property="og:title" content="Home- DEMO SITE">
+    <meta property="og:image" content="//demo-site.com/images/logo.png">
+    <meta property="og:description" content="Description for home page">
+    <meta property="og:site_name" content="DEMO SITE">
+    <meta property="article:author" content="//www.facebook.com/baonguyenyam">
+    <meta property="article:publisher" content="//www.facebook.com/baonguyenyam">
+    <!-- Social: Google / Schema.org-->
+    <link rel="author" href="//plus.google.com/XXXXXXXXXXXXXX/">
+    <link rel="publisher" href="//plus.google.com/XXXXXXXXXXXXXX/">
+    <meta itemprop="name" content="Home- DEMO SITE">
+    <meta itemprop="description" content="Description for home page">
+    <meta itemprop="image" content="//demo-site.com/images/logo.png">
+    <!-- Meta Tag Search-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Home- DEMO SITE"><!-- ////////////// CSS Include ////////////// -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel=stylesheet>
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/thuvien.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/main.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/custom.css">
+    <!-- ////////////// FAVICON ////////////// -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script>var ambient_value='#008c9d';var diffuse_value='#008c9d';</script>
+	<?php wp_head(); ?>
+</head>
+
+<body class="home-page bg-img" id="top-page">
+    <div class=body-slider>
+        <div class="body-single-slide body-slide-1" style="background-image: url(<?php bloginfo('stylesheet_directory') ?>/img/bg.jpg)"></div>
+        <div class="body-single-slide body-slide-2" style="background-image: url(<?php bloginfo('stylesheet_directory') ?>/img/bg1.jpg)"></div>
+    </div>
+    <div class=preloader-wrap>
+        <div class=preloader><span></span> <span></span> <span></span> <span></span></div>
+    </div>
+    <div class="bg-img color-white main-container">
+        <header class="xs-no-positioning fixed fixed-top main-header">
+            <div class=container-fluid>
+                <div class="clearfix row">
+                    <div class="pull-right clearfix col-xs-6 exs-full-width">
+                        <div class="pull-right header-right">
+                            <ul class="list-inline social-icons">
+                                <li><a href=# target=_blank><i class="icofont icofont-social-facebook"></i></a>
+                                    <li><a href=# target=_blank><i class="icofont icofont-social-twitter"></i></a>
+                                        <li><a href=# target=_blank><i class="icofont icofont-social-pinterest"></i></a>
+                                            <li><a href=# target=_blank><i class="icofont icofont-social-dribbble"></i></a></ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 exs-full-width">
+                        <div class=logo>
+                            <a href=index.html><img alt=Logo src=img/logo.png></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>

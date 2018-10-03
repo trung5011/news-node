@@ -1,0 +1,46 @@
+extends layout
+
+block content
+	.row
+		.col-md-12.col-sm-12.col-xs-12
+			.x_panel
+				.x_title
+					h2
+						| Post
+				.x_content.posts-content
+					span.clear-all.btn.btn-danger Xoá post được chọn
+					a.btn.btn-primary(href="/formnews")
+						| add new
+					.table-responsive
+						table.table.table-striped.jambo_table.bulk_action
+							thead
+								tr.headings
+									th
+										input#check-all.flat(type='checkbox')
+									th.column-title Title 
+									th.column-title Date 
+									th.column-title Images 
+									th.column-title clear 
+									th.bulk-actions(colspan='7')
+										a.antoo(style='color:#fff; font-weight:500;')
+											| Đã chọn ( 
+											span.action-cnt  
+											|  ) 
+							tbody 
+								- for(var news in data)
+									-if(data[news].status === true){
+										tr.even.pointer
+											td.a-center
+												input.flat.post-checkbox(type='checkbox', name='table_records',data-post=data[news].name)
+											td
+												a(href="/post-edit/"+data[news].name)=data[news].username
+													h3=data[news].title
+													p!=data[news].sdesc
+											td
+												time=data[news].createdAt
+											td
+												.desc-img
+													img.img-responsive(src=data[news].img, alt="")
+											td
+												a.btn.btn-danger(href="/delete/"+data[news].name) xoá
+									-}
